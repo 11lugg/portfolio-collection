@@ -93,6 +93,7 @@ main #portfolio-all {
 }
 
 main #portfolio-all .portfolio {
+  background-image: url("../img/");
   margin: 24px;
   width: 375px;
   height: 240px;
