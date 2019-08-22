@@ -1,0 +1,86 @@
+body {
+  font-family: 'Podkova', serif;
+  background: #eee;
+}
+
+section, header, footer {
+  margin: 1% 3%;
+  padding: 1% 3%;
+  background: white;
+  border-radius: 5px;
+  min-width: 900px;
+}
+
+header {
+  font-family: 'Varela Round', sans-serif;
+}
+
+header > * {
+  display: inline-block;
+  /* border: solid red 2px; */
+}
+
+h1 {
+  font-size: 28px;
+  width: 46%;
+}
+
+header > h2 {
+  font-size: 28px;
+  width: 32%;
+}
+
+.btn {
+  color: black;
+  text-align: center;
+  background: white;
+  text-decoration: none;
+  margin: 1px;
+  border: 2px solid #eee;
+  padding: 2px;
+  min-width: 100px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #eee;
+}
+
+.row {
+  clear: both;
+}
+
+.column {
+  clear: both;
+}
+
+span {
+  margin: 30%;
+}
+
+.left {
+  float: left;
+  /* clear: both; */
+}
+
+.right {
+  text-align: right;
+  float: right;
+  min-width: 500px;
+
+} 
+
+#table {
+  min-height: 880px;
+  
+}
+
+ul {
+  direction: rtl;
+  padding-right: 12px;
+  margin-right: 0px;
+}
+
+#skills {
+  direction: initial;
+}

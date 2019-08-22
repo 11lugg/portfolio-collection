@@ -1,0 +1,240 @@
+/*****************************
+*
+* Author: Jonathan Lugg
+* Date: 20.05.2019
+*
+*****************************/
+
+/* Main background colour on all pages */
+body{
+    font-family: sans-serif;
+    color: #aa2e00;
+    margin: 0;
+    background: #eee;
+}
+/* Visible page boundaries on all pages */
+#wrapper{
+    width: 900px;
+    margin: 0 auto;
+    background: #e8a87c;
+    padding: 10px 5px;
+}
+/* Navigation bar on all pages */
+nav{
+    background: #e8a87c;
+}
+
+nav ol{
+    text-align: right;
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+nav li{
+    display: inline;
+    margin-left: 15px;
+}
+/* Navigation alignment on home page */
+#nav-main ol{
+    margin-right: 100px;
+}
+/* Navigation alignment with icon on all other pages */
+nav img.icon-pic{
+    height: 10%;
+    width: 10%;
+    padding: 6px;
+    border-radius: 6px;
+    position: block;
+}
+/* Navigation button colours */
+nav a{
+    color: #aa2e00;
+    background: #e8c27c;
+    background: linear-gradient(top, #e8c27c 10%, #e88c7c 70%);
+    background: -webkit-linear-gradient(top, #e8c27c 10%, #e88c7c 70%);
+    background: -moz-linear-gradient(top, #e8c27c 10%, #e88c7c 70%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 6px;
+    border-radius: 6px;
+}
+/* Navigation button colours when hovering */
+nav a:hover{
+    background: #7ce8c0;
+    background: linear-gradient(bottom, #7ce8c0 0%, #207885 100%);
+    background: -webkit-linear-gradient(bottom, #7ce8c0 0%, #207885 100%);
+    background: -moz-linear-gradient(bottom, #7ce8c0 0%, #207885 100%);
+}
+/* Navigation button colour for current page */
+nav a.current{
+    background: #7ca3e8;
+    background: linear-gradient(top, #7ca3e8 0%, #e8a97c 100%);
+    background: -webkit-linear-gradient(top, #7ca3e8 0%, #e8a97c 100%);
+    background: -moz-linear-gradient(top, #7ca3e8 0%, #e8a97c 100%);
+    border-radius: 6px;
+}
+/* Navigation button colour for current page when hovering */
+nav a.current:hover{
+    background: #a13f21;
+    background: linear-gradient(bottom, #7ca3e8 0%, #e8a97c 100%);
+    background: -webkit-linear-gradient(bottom, #7ca3e8 0%, #e8a97c 100%);
+    background: -moz-linear-gradient(bottom, #7ca3e8 0%, #e8a97c 100%);
+}
+/* Header for each page */
+#header{
+    margin: 30px, 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+/****************** Styling for hobbies and interests *****************/
+
+/* Icon images and boxing */
+div [class*="hobbies-"]{
+    height: 100%;
+    width: 100%;
+}
+
+#hobbies{
+    padding: 5%;
+}
+
+#hobbies ul{
+    text-align: center;
+}
+
+#hobbies li{
+    display: inline-block;
+    padding: 4%;
+    border-radius: 6px;
+    background: #e8a87c;
+    margin: 20px;
+    border-style: dotted;
+    width: 8%;
+}
+
+/* #hobbies li:hover{
+    border-style: inset;
+} */
+
+/****************** Styling for Background *****************/
+
+.tab {
+    float: left;
+    border: 1px solid white;
+    background-color: white;
+    width: 30%;
+    height: 60%;
+    border-radius: 6px;
+}
+
+.tab button {
+    background-color: #e8a87c;
+    color: #aa2e00;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+.tab button:hover {
+    background-color: white;
+    border-style: inset;
+    border-radius: 6px;
+}
+
+.tab button.active {
+    background-color: white;
+}
+
+.tabcontent {
+    float: left;
+    padding: 6px;
+    padding-bottom: 24px;
+    padding-left: 10px;
+    border: 1px solid white;
+    width: 67%;
+    border-left: none;
+    height: 545px;
+    display: none;
+    border-radius: 6px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#background-main {
+    text-align: left;
+}
+
+p.desc {
+    font-style: italic;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+a.link {
+    text-decoration: none;
+    color: #aa2e00;
+    text-transform: uppercase;
+    border: 6px;
+    margin: 10px, 100px;
+    padding: 6px;
+    border-style: dotted;
+}
+
+a.link:hover {
+    background: white;
+}
+
+/****************** Styling for Course Wants *****************/
+
+.column {
+    float: left;
+    width: 49%;
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    -webkit-columns: 1 400px;
+    -moz-columns: 1 400px;
+    columns: 1 400px;
+    -webkit-column-rule: 1px solid black;
+    -moz-column-rule: 1px solid black;
+    column-rule: 1px solid black;
+}
+
+
+
+/* #why {
+    text-align: center;
+    display: inline;
+    padding: 0%;
+    border-radius: 6px;
+}
+
+#what {
+    text-align: center;
+    display: inline;
+    padding: 0%;
+    border-radius: 6px;
+}
+
+ol {
+    list-style-type: none;
+    font-size: 14px;
+} */
+
