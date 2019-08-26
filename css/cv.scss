@@ -197,6 +197,37 @@ main {
           opacity: 1;
         }
       }
+      .p4 {
+        background-image: url("../img/hostile\ aliens.PNG");
+        background-size: 350px;
+        background-position: center;
+        background-repeat: no-repeat;
+        &:hover {
+          border: 1px solid black;
+          transition: 1s;
+        }
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          opacity: 0;
+          height: 100%;
+          width: 100%;
+          margin: 0;
+          background-position: center;
+          border-radius: 20px;
+          transition: 1.5s;
+          p {
+            padding: 0 20px;
+          }
+          &:hover {
+            transition: 1s;
+            background-color: white;
+            opacity: 1;
+          }
+        }
+      }
     }
   }
 }
