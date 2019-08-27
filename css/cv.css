@@ -259,20 +259,20 @@ main #portfolio-all .p3 div:hover {
   opacity: 1;
 }
 
-main #portfolio-all .p3 .p4 {
+main #portfolio-all .p4 {
   background-image: url("../img/hostile aliens.PNG");
   background-size: 350px;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-main #portfolio-all .p3 .p4:hover {
+main #portfolio-all .p4:hover {
   border: 1px solid black;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-main #portfolio-all .p3 .p4 div {
+main #portfolio-all .p4 div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,11 +296,11 @@ main #portfolio-all .p3 .p4 div {
   transition: 1.5s;
 }
 
-main #portfolio-all .p3 .p4 div p {
+main #portfolio-all .p4 div p {
   padding: 0 20px;
 }
 
-main #portfolio-all .p3 .p4 div:hover {
+main #portfolio-all .p4 div:hover {
   -webkit-transition: 1s;
   transition: 1s;
   background-color: white;
