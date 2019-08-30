@@ -340,4 +340,41 @@ footer {
   color: black;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 480px) {
+  #bio-summary {
+    width: 275px;
+    margin: 16px;
+  }
+  main #portfolio-all .p1 {
+    width: 275px;
+    background-size: 275px;
+  }
+  main #portfolio-all .p2 {
+    width: 275px;
+    background-size: 250px;
+  }
+  main #portfolio-all .p3 {
+    width: 275px;
+    background-size: 250px;
+  }
+  main #portfolio-all .p4 {
+    width: 275px;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 /*# sourceMappingURL=cv.css.map */
