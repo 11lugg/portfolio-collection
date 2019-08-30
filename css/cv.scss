@@ -213,7 +213,6 @@ main {
 
 a {
   text-decoration: none;
-  color: black;
 }
 /*************************************************** styling for contact links in footer**************************************************************/
 footer {
@@ -246,18 +245,38 @@ footer {
     #portfolio-all {
       .p1 {
         width: 275px;
-        background-size: 275px;
+        background-size: 250px;
+        div {
+          p {
+            font-size: 14px;
+          }
+        }
       }
       .p2 {
         width: 275px;
-        background-size: 250px;
+        background-size: 200px;
+        div {
+          p {
+            font-size: 14px;
+          }
+        }
       }
       .p3 {
         width: 275px;
-        background-size: 250px;
+        background-size: 200px;
+        div {
+          p {
+            font-size: 14px;
+          }
+        }
       }
       .p4 {
         width: 275px;
+        div {
+          p {
+            font-size: 14px;
+          }
+        }
       }
     }
   }

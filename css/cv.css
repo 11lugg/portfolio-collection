@@ -309,7 +309,6 @@ main #portfolio-all .p4 div:hover {
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 /*************************************************** styling for contact links in footer**************************************************************/
@@ -348,18 +347,30 @@ footer {
   }
   main #portfolio-all .p1 {
     width: 275px;
-    background-size: 275px;
+    background-size: 250px;
+  }
+  main #portfolio-all .p1 div p {
+    font-size: 14px;
   }
   main #portfolio-all .p2 {
     width: 275px;
-    background-size: 250px;
+    background-size: 200px;
+  }
+  main #portfolio-all .p2 div p {
+    font-size: 14px;
   }
   main #portfolio-all .p3 {
     width: 275px;
-    background-size: 250px;
+    background-size: 200px;
+  }
+  main #portfolio-all .p3 div p {
+    font-size: 14px;
   }
   main #portfolio-all .p4 {
     width: 275px;
+  }
+  main #portfolio-all .p4 div p {
+    font-size: 14px;
   }
   footer {
     display: -webkit-box;
