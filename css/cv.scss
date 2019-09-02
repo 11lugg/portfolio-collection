@@ -108,6 +108,17 @@ main {
         p {
           padding: 0 20px;
         }
+        button {
+          border-radius: 5px;
+          background-color: white;
+          box-shadow: none;
+          width: 75px;
+          height: 35px;
+          border: 1px solid black;
+          &:focus {
+            outline: none;
+          }
+        }
         &:hover {
           transition: 1s;
           background-color: white;
@@ -138,6 +149,17 @@ main {
         transition: 1.5s;
         p {
           padding: 0 20px;
+        }
+        button {
+          border-radius: 5px;
+          background-color: white;
+          box-shadow: none;
+          width: 75px;
+          height: 35px;
+          border: 1px solid black;
+          &:focus {
+            outline: none;
+          }
         }
         &:hover {
           transition: 1s;
@@ -170,6 +192,17 @@ main {
         p {
           padding: 0 20px;
         }
+        button {
+          border-radius: 5px;
+          background-color: white;
+          box-shadow: none;
+          width: 75px;
+          height: 35px;
+          border: 1px solid black;
+          &:focus {
+            outline: none;
+          }
+        }
         &:hover {
           transition: 1s;
           background-color: white;
@@ -200,6 +233,17 @@ main {
         transition: 1.5s;
         p {
           padding: 0 20px;
+        }
+        button {
+          border-radius: 5px;
+          background-color: white;
+          box-shadow: none;
+          width: 75px;
+          height: 35px;
+          border: 1px solid black;
+          &:focus {
+            outline: none;
+          }
         }
         &:hover {
           transition: 1s;

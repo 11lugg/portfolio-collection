@@ -156,6 +156,20 @@ main #portfolio-all .p1 div p {
   padding: 0 20px;
 }
 
+main #portfolio-all .p1 div button {
+  border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 75px;
+  height: 35px;
+  border: 1px solid black;
+}
+
+main #portfolio-all .p1 div button:focus {
+  outline: none;
+}
+
 main #portfolio-all .p1 div:hover {
   -webkit-transition: 1s;
   transition: 1s;
@@ -202,6 +216,20 @@ main #portfolio-all .p2 div {
 
 main #portfolio-all .p2 div p {
   padding: 0 20px;
+}
+
+main #portfolio-all .p2 div button {
+  border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 75px;
+  height: 35px;
+  border: 1px solid black;
+}
+
+main #portfolio-all .p2 div button:focus {
+  outline: none;
 }
 
 main #portfolio-all .p2 div:hover {
@@ -252,6 +280,20 @@ main #portfolio-all .p3 div p {
   padding: 0 20px;
 }
 
+main #portfolio-all .p3 div button {
+  border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 75px;
+  height: 35px;
+  border: 1px solid black;
+}
+
+main #portfolio-all .p3 div button:focus {
+  outline: none;
+}
+
 main #portfolio-all .p3 div:hover {
   -webkit-transition: 1s;
   transition: 1s;
@@ -298,6 +340,20 @@ main #portfolio-all .p4 div {
 
 main #portfolio-all .p4 div p {
   padding: 0 20px;
+}
+
+main #portfolio-all .p4 div button {
+  border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 75px;
+  height: 35px;
+  border: 1px solid black;
+}
+
+main #portfolio-all .p4 div button:focus {
+  outline: none;
 }
 
 main #portfolio-all .p4 div:hover {
