@@ -4,11 +4,14 @@ body {
   height: 100vh;
   width: 100vw;
 }
+html {
+  scroll-behavior: smooth;
+}
 section,
 main,
 header,
 footer {
-  margin: 1% 3%;
+  margin: 1.25% 3%;
   padding: 1% 3%;
   background: white;
   border-radius: 20px;
@@ -27,6 +30,8 @@ footer {
 #bio {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
   h1 {
     text-align: center;
     font-size: 48px;
@@ -34,14 +39,30 @@ footer {
   p {
     font-size: 17px;
   }
+  #scroll {
+    text-align: center;
+    font-size: 28px;
+    color: black;
+    margin-bottom: 28px;
+    span {
+      font-family: "Open Sans Condensed", sans-serif;
+      font-weight: 900;
+      opacity: 0.2;
+    }
+  }
 }
 #bio-summary {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
   align-self: center;
+  justify-content: center;
   display: flex;
   width: 375px;
+  height: 300px;
   border-radius: 20px;
   border: 1.5px solid #eee;
-  justify-content: space-between;
+  // justify-content: space-between;
   -webkit-box-shadow: 0px 0px 19px -10px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 19px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 19px -10px rgba(0, 0, 0, 0.75);
@@ -52,6 +73,12 @@ footer {
     -webkit-box-shadow: 0px 0px 128px -41px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 128px -41px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 128px -41px rgba(0, 0, 0, 0.75);
+  }
+  h1 {
+    margin: 0;
+  }
+  #wrapper {
+    display: flex;
   }
 }
 main {
@@ -281,6 +308,10 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
+  #bio {
+    height: 99vh;
+  }
+
   #bio-summary {
     width: 275px;
     margin: 16px;
