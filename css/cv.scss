@@ -31,7 +31,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 90vh;
+  height: 96%;
   h1 {
     text-align: center;
     font-size: 48px;
@@ -309,7 +309,7 @@ footer {
 
 @media only screen and (max-width: 480px) {
   #bio {
-    height: 88vh;
+    height: 97%;
   }
 
   #bio-summary {
