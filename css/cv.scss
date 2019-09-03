@@ -282,6 +282,13 @@ main {
   }
 }
 
+.buttonLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+}
+
 a {
   text-decoration: none;
 }
