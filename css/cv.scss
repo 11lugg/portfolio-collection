@@ -18,7 +18,6 @@ footer {
   border-radius: 20px;
   width: 87%;
 }
-
 %portfolio-item {
   background-size: 350px;
   background-position: center;
@@ -63,9 +62,7 @@ footer {
     }
   }
 }
-
 /*************************************************** styling for Header**************************************************************/
-
 #jon-lugg {
   background-image: url("../img/jon-lugg.png");
   background-size: cover;
@@ -132,7 +129,6 @@ footer {
   }
 }
 /*************************************************** styling for Main**************************************************************/
-
 main {
   h2 {
     text-align: center;
@@ -168,7 +164,9 @@ main {
       @extend %portfolio-item;
     }
     .p2 {
-      background-image: url("../img/Hedira-Title-Logo.png");
+      background-image: url("../img/hedira2.png");
+      background-size: 200px;
+      background-position: bottom;
       @extend %portfolio-item;
     }
     .p3 {
@@ -181,7 +179,6 @@ main {
     }
   }
 }
-
 .buttonLinks {
   display: flex;
   flex-direction: row;
@@ -198,22 +195,18 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 }
-
 #footer-text {
   padding: 20px 10px;
 }
-
 #footer-links {
   padding: 30px 10px;
   font-size: 30px;
   color: black;
 }
-
 #footer-links > a {
   color: black;
   text-decoration: none;
 }
-
 @media only screen and (max-width: 480px) {
   #bio {
     height: 97%;

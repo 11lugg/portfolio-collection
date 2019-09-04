@@ -229,7 +229,9 @@ main #portfolio-all .p1 {
 }
 
 main #portfolio-all .p2 {
-  background-image: url("../img/Hedira-Title-Logo.png");
+  background-image: url("../img/hedira2.png");
+  background-size: 200px;
+  background-position: bottom;
 }
 
 main #portfolio-all .p3 {
