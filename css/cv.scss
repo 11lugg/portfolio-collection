@@ -149,6 +149,9 @@ main {
           &:focus {
             outline: none;
           }
+          &:hover {
+            cursor: pointer;
+          }
         }
         &:hover {
           transition: 1s;
@@ -190,6 +193,9 @@ main {
           border: 1px solid black;
           &:focus {
             outline: none;
+          }
+          &:hover {
+            cursor: pointer;
           }
         }
         &:hover {
@@ -233,6 +239,9 @@ main {
           &:focus {
             outline: none;
           }
+          &:hover {
+            cursor: pointer;
+          }
         }
         &:hover {
           transition: 1s;
@@ -274,6 +283,9 @@ main {
           border: 1px solid black;
           &:focus {
             outline: none;
+          }
+          &:hover {
+            cursor: pointer;
           }
         }
         &:hover {

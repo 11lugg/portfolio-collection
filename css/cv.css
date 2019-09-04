@@ -214,6 +214,10 @@ main #portfolio-all .p1 div button:focus {
   outline: none;
 }
 
+main #portfolio-all .p1 div button:hover {
+  cursor: pointer;
+}
+
 main #portfolio-all .p1 div:hover {
   -webkit-transition: 1s;
   transition: 1s;
@@ -274,6 +278,10 @@ main #portfolio-all .p2 div button {
 
 main #portfolio-all .p2 div button:focus {
   outline: none;
+}
+
+main #portfolio-all .p2 div button:hover {
+  cursor: pointer;
 }
 
 main #portfolio-all .p2 div:hover {
@@ -338,6 +346,10 @@ main #portfolio-all .p3 div button:focus {
   outline: none;
 }
 
+main #portfolio-all .p3 div button:hover {
+  cursor: pointer;
+}
+
 main #portfolio-all .p3 div:hover {
   -webkit-transition: 1s;
   transition: 1s;
@@ -398,6 +410,10 @@ main #portfolio-all .p4 div button {
 
 main #portfolio-all .p4 div button:focus {
   outline: none;
+}
+
+main #portfolio-all .p4 div button:hover {
+  cursor: pointer;
 }
 
 main #portfolio-all .p4 div:hover {
