@@ -294,9 +294,13 @@ footer {
   #bio {
     height: 97%;
   }
-  #bio-summary {
-    width: 275px;
-    margin: 16px;
+  #bio #bio-summary {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  #bio #bio-summary:hover {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   main #portfolio-all .p1 {
     width: 275px;

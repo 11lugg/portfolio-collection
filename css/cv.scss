@@ -210,11 +210,12 @@ footer {
 @media only screen and (max-width: 480px) {
   #bio {
     height: 97%;
-  }
-
-  #bio-summary {
-    width: 275px;
-    margin: 16px;
+    #bio-summary {
+      transform: scale(0.7);
+      &:hover {
+        transform: scale(0.8);
+      }
+    }
   }
   main {
     #portfolio-all {
