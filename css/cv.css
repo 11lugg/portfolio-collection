@@ -1,3 +1,4 @@
+/*************************************************** styling global **************************************************************/
 body {
   font-family: "Podkova", serif;
   background: #eee;
@@ -20,6 +21,72 @@ footer {
   width: 87%;
 }
 
+main #portfolio-all .p1, main #portfolio-all .p2, main #portfolio-all .p3, main #portfolio-all .p4 {
+  background-size: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main #portfolio-all .p1:hover, main #portfolio-all .p2:hover, main #portfolio-all .p3:hover, main #portfolio-all .p4:hover {
+  border: 1px solid black;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main #portfolio-all .p1 div, main #portfolio-all .p2 div, main #portfolio-all .p3 div, main #portfolio-all .p4 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-position: center;
+  border-radius: 20px;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+main #portfolio-all .p1 div p, main #portfolio-all .p2 div p, main #portfolio-all .p3 div p, main #portfolio-all .p4 div p {
+  padding: 0 20px;
+}
+
+main #portfolio-all .p1 div button, main #portfolio-all .p2 div button, main #portfolio-all .p3 div button, main #portfolio-all .p4 div button {
+  border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 75px;
+  height: 35px;
+  border: 1px solid black;
+}
+
+main #portfolio-all .p1 div button:focus, main #portfolio-all .p2 div button:focus, main #portfolio-all .p3 div button:focus, main #portfolio-all .p4 div button:focus {
+  outline: none;
+}
+
+main #portfolio-all .p1 div button:hover, main #portfolio-all .p2 div button:hover, main #portfolio-all .p3 div button:hover, main #portfolio-all .p4 div button:hover {
+  cursor: pointer;
+}
+
+main #portfolio-all .p1 div:hover, main #portfolio-all .p2 div:hover, main #portfolio-all .p3 div:hover, main #portfolio-all .p4 div:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: white;
+  opacity: 1;
+}
+
+/*************************************************** styling for Header**************************************************************/
 #jon-lugg {
   background-image: url("../img/jon-lugg.png");
   background-size: cover;
@@ -47,29 +114,7 @@ footer {
   height: 96%;
 }
 
-#bio h1 {
-  text-align: center;
-  font-size: 48px;
-}
-
-#bio p {
-  font-size: 17px;
-}
-
-#bio #scroll {
-  text-align: center;
-  font-size: 28px;
-  color: black;
-  margin-bottom: 28px;
-}
-
-#bio #scroll span {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: 900;
-  opacity: 0.2;
-}
-
-#bio-summary {
+#bio #bio-summary {
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,7 +139,17 @@ footer {
   transition: 1.5s;
 }
 
-#bio-summary:hover {
+#bio #bio-summary h1 {
+  text-align: center;
+  font-size: 48px;
+  margin: 0;
+}
+
+#bio #bio-summary p {
+  font-size: 17px;
+}
+
+#bio #bio-summary:hover {
   -webkit-transition: 1s;
   transition: 1s;
   -webkit-transform: scale(1.08);
@@ -103,16 +158,30 @@ footer {
   box-shadow: 0px 0px 128px -41px rgba(0, 0, 0, 0.75);
 }
 
-#bio-summary h1 {
-  margin: 0;
-}
-
-#bio-summary #wrapper {
+#bio #bio-summary #wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+#bio #scroll {
+  text-align: center;
+  font-size: 28px;
+  color: black;
+  margin-bottom: 28px;
+}
+
+#bio #scroll span {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+#bio #scroll:hover {
+  color: grey;
+}
+
+/*************************************************** styling for Main**************************************************************/
 main h2 {
   text-align: center;
 }
@@ -157,250 +226,20 @@ main #portfolio-all .portfolio:hover {
 
 main #portfolio-all .p1 {
   background-image: url("../img/tugapug.png");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-
-main #portfolio-all .p1:hover {
-  border: 1px solid black;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-main #portfolio-all .p1 div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  background-position: center;
-  border-radius: 20px;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-}
-
-main #portfolio-all .p1 div p {
-  padding: 0 20px;
-}
-
-main #portfolio-all .p1 div button {
-  border-radius: 5px;
-  background-color: white;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  width: 75px;
-  height: 35px;
-  border: 1px solid black;
-}
-
-main #portfolio-all .p1 div button:focus {
-  outline: none;
-}
-
-main #portfolio-all .p1 div:hover {
-  -webkit-transition: 1s;
-  transition: 1s;
-  background-color: white;
-  opacity: 1;
 }
 
 main #portfolio-all .p2 {
-  background-image: url("../img/Hedira-Title-Logo.png");
-  background-size: 350px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-main #portfolio-all .p2:hover {
-  border: 1px solid black;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-main #portfolio-all .p2 div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  background-position: center;
-  border-radius: 20px;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-}
-
-main #portfolio-all .p2 div p {
-  padding: 0 20px;
-}
-
-main #portfolio-all .p2 div button {
-  border-radius: 5px;
-  background-color: white;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  width: 75px;
-  height: 35px;
-  border: 1px solid black;
-}
-
-main #portfolio-all .p2 div button:focus {
-  outline: none;
-}
-
-main #portfolio-all .p2 div:hover {
-  -webkit-transition: 1s;
-  transition: 1s;
-  background-color: white;
-  opacity: 1;
+  background-image: url("../img/hedira2.png");
+  background-size: 200px;
+  background-position: bottom;
 }
 
 main #portfolio-all .p3 {
   background-image: url("../img/todolist.PNG");
-  background-size: 350px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-main #portfolio-all .p3:hover {
-  border: 1px solid black;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-main #portfolio-all .p3 div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  background-position: center;
-  border-radius: 20px;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-}
-
-main #portfolio-all .p3 div p {
-  padding: 0 20px;
-}
-
-main #portfolio-all .p3 div button {
-  border-radius: 5px;
-  background-color: white;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  width: 75px;
-  height: 35px;
-  border: 1px solid black;
-}
-
-main #portfolio-all .p3 div button:focus {
-  outline: none;
-}
-
-main #portfolio-all .p3 div:hover {
-  -webkit-transition: 1s;
-  transition: 1s;
-  background-color: white;
-  opacity: 1;
 }
 
 main #portfolio-all .p4 {
   background-image: url("../img/hostile aliens.PNG");
-  background-size: 350px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-main #portfolio-all .p4:hover {
-  border: 1px solid black;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-main #portfolio-all .p4 div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  background-position: center;
-  border-radius: 20px;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-}
-
-main #portfolio-all .p4 div p {
-  padding: 0 20px;
-}
-
-main #portfolio-all .p4 div button {
-  border-radius: 5px;
-  background-color: white;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  width: 75px;
-  height: 35px;
-  border: 1px solid black;
-}
-
-main #portfolio-all .p4 div button:focus {
-  outline: none;
-}
-
-main #portfolio-all .p4 div:hover {
-  -webkit-transition: 1s;
-  transition: 1s;
-  background-color: white;
-  opacity: 1;
 }
 
 .buttonLinks {
@@ -455,9 +294,13 @@ footer {
   #bio {
     height: 97%;
   }
-  #bio-summary {
-    width: 275px;
-    margin: 16px;
+  #bio #bio-summary {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  #bio #bio-summary:hover {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   main #portfolio-all .p1 {
     width: 275px;

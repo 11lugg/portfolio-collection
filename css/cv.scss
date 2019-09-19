@@ -1,3 +1,4 @@
+/*************************************************** styling global **************************************************************/
 body {
   font-family: "Podkova", serif;
   background: #eee;
@@ -17,6 +18,51 @@ footer {
   border-radius: 20px;
   width: 87%;
 }
+%portfolio-item {
+  background-size: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  &:hover {
+    border: 1px solid black;
+    transition: 1s;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-position: center;
+    border-radius: 20px;
+    transition: 1.5s;
+    p {
+      padding: 0 20px;
+    }
+    button {
+      border-radius: 5px;
+      background-color: white;
+      box-shadow: none;
+      width: 75px;
+      height: 35px;
+      border: 1px solid black;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &:hover {
+      transition: 1s;
+      background-color: white;
+      opacity: 1;
+    }
+  }
+}
+/*************************************************** styling for Header**************************************************************/
 #jon-lugg {
   background-image: url("../img/jon-lugg.png");
   background-size: cover;
@@ -33,12 +79,39 @@ footer {
   justify-content: space-around;
   align-items: center;
   height: 96%;
-  h1 {
-    text-align: center;
-    font-size: 48px;
-  }
-  p {
-    font-size: 17px;
+  #bio-summary {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    width: 375px;
+    height: 300px;
+    border-radius: 20px;
+    border: 1.5px solid #eee;
+    -webkit-box-shadow: 0px 0px 19px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 19px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 19px -10px rgba(0, 0, 0, 0.75);
+    transition: 1.5s;
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      margin: 0;
+    }
+    p {
+      font-size: 17px;
+    }
+    &:hover {
+      transition: 1s;
+      transform: scale(1.08);
+      -webkit-box-shadow: 0px 0px 128px -41px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 128px -41px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 128px -41px rgba(0, 0, 0, 0.75);
+    }
+    #wrapper {
+      display: flex;
+    }
   }
   #scroll {
     text-align: center;
@@ -46,42 +119,16 @@ footer {
     color: black;
     margin-bottom: 28px;
     span {
-      font-family: "Open Sans Condensed", sans-serif;
+      font-family: "Syncopate", sans-serif;
       font-weight: 900;
-      opacity: 0.2;
+      font-size: 18px;
+    }
+    &:hover {
+      color: grey;
     }
   }
 }
-#bio-summary {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-content: center;
-  display: flex;
-  width: 375px;
-  height: 300px;
-  border-radius: 20px;
-  border: 1.5px solid #eee;
-  // justify-content: space-between;
-  -webkit-box-shadow: 0px 0px 19px -10px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 19px -10px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 19px -10px rgba(0, 0, 0, 0.75);
-  transition: 1.5s;
-  &:hover {
-    transition: 1s;
-    transform: scale(1.08);
-    -webkit-box-shadow: 0px 0px 128px -41px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 128px -41px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 128px -41px rgba(0, 0, 0, 0.75);
-  }
-  h1 {
-    margin: 0;
-  }
-  #wrapper {
-    display: flex;
-  }
-}
+/*************************************************** styling for Main**************************************************************/
 main {
   h2 {
     text-align: center;
@@ -114,175 +161,24 @@ main {
     }
     .p1 {
       background-image: url("../img/tugapug.png");
-      background-size: cover;
-      background-position: bottom;
-      background-repeat: no-repeat;
-      &:hover {
-        border: 1px solid black;
-        transition: 1s;
-      }
-      div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        opacity: 0;
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        background-position: center;
-        border-radius: 20px;
-        transition: 1.5s;
-        p {
-          padding: 0 20px;
-        }
-        button {
-          border-radius: 5px;
-          background-color: white;
-          box-shadow: none;
-          width: 75px;
-          height: 35px;
-          border: 1px solid black;
-          &:focus {
-            outline: none;
-          }
-        }
-        &:hover {
-          transition: 1s;
-          background-color: white;
-          opacity: 1;
-        }
-      }
+      @extend %portfolio-item;
     }
     .p2 {
-      background-image: url("../img/Hedira-Title-Logo.png");
-      background-size: 350px;
-      background-position: center;
-      background-repeat: no-repeat;
-      &:hover {
-        border: 1px solid black;
-        transition: 1s;
-      }
-      div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        opacity: 0;
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        background-position: center;
-        border-radius: 20px;
-        transition: 1.5s;
-        p {
-          padding: 0 20px;
-        }
-        button {
-          border-radius: 5px;
-          background-color: white;
-          box-shadow: none;
-          width: 75px;
-          height: 35px;
-          border: 1px solid black;
-          &:focus {
-            outline: none;
-          }
-        }
-        &:hover {
-          transition: 1s;
-          background-color: white;
-          opacity: 1;
-        }
-      }
+      background-image: url("../img/hedira2.png");
+      background-size: 200px;
+      background-position: bottom;
+      @extend %portfolio-item;
     }
     .p3 {
       background-image: url("../img/todolist.PNG");
-      background-size: 350px;
-      background-position: center;
-      background-repeat: no-repeat;
-      &:hover {
-        border: 1px solid black;
-        transition: 1s;
-      }
-      div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        opacity: 0;
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        background-position: center;
-        border-radius: 20px;
-        transition: 1.5s;
-        p {
-          padding: 0 20px;
-        }
-        button {
-          border-radius: 5px;
-          background-color: white;
-          box-shadow: none;
-          width: 75px;
-          height: 35px;
-          border: 1px solid black;
-          &:focus {
-            outline: none;
-          }
-        }
-        &:hover {
-          transition: 1s;
-          background-color: white;
-          opacity: 1;
-        }
-      }
+      @extend %portfolio-item;
     }
     .p4 {
       background-image: url("../img/hostile\ aliens.PNG");
-      background-size: 350px;
-      background-position: center;
-      background-repeat: no-repeat;
-      &:hover {
-        border: 1px solid black;
-        transition: 1s;
-      }
-      div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        opacity: 0;
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        background-position: center;
-        border-radius: 20px;
-        transition: 1.5s;
-        p {
-          padding: 0 20px;
-        }
-        button {
-          border-radius: 5px;
-          background-color: white;
-          box-shadow: none;
-          width: 75px;
-          height: 35px;
-          border: 1px solid black;
-          &:focus {
-            outline: none;
-          }
-        }
-        &:hover {
-          transition: 1s;
-          background-color: white;
-          opacity: 1;
-        }
-      }
+      @extend %portfolio-item;
     }
   }
 }
-
 .buttonLinks {
   display: flex;
   flex-direction: row;
@@ -299,30 +195,27 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 }
-
 #footer-text {
   padding: 20px 10px;
 }
-
 #footer-links {
   padding: 30px 10px;
   font-size: 30px;
   color: black;
 }
-
 #footer-links > a {
   color: black;
   text-decoration: none;
 }
-
 @media only screen and (max-width: 480px) {
   #bio {
     height: 97%;
-  }
-
-  #bio-summary {
-    width: 275px;
-    margin: 16px;
+    #bio-summary {
+      transform: scale(0.7);
+      &:hover {
+        transform: scale(0.8);
+      }
+    }
   }
   main {
     #portfolio-all {
